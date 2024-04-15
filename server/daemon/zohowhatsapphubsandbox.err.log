@@ -1,0 +1,281 @@
+internal/modules/cjs/loader.js:985
+  throw err;
+  ^
+
+Error: Cannot find module 'request'
+Require stack:
+- C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\app\js\zapphub.js
+- C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\app\js\routes.js
+- C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:982:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:864:27)
+    at Module.require (internal/modules/cjs/loader.js:1044:19)
+    at require (internal/modules/cjs/helpers.js:77:18)
+    at Object.<anonymous> (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\app\js\zapphub.js:1:15)
+    at Module._compile (internal/modules/cjs/loader.js:1158:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+    at Module.load (internal/modules/cjs/loader.js:1002:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+    at Module.require (internal/modules/cjs/loader.js:1044:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\Administrator\\Dropbox\\WhatsAppHub\\@Original\\WHUB\\app\\js\\zapphub.js',
+    'C:\\Users\\Administrator\\Dropbox\\WhatsAppHub\\@Original\\WHUB\\app\\js\\routes.js',
+    'C:\\Users\\Administrator\\Dropbox\\WhatsAppHub\\@Original\\WHUB\\server\\index.js'
+  ]
+}
+internal/modules/cjs/loader.js:985
+  throw err;
+  ^
+
+Error: Cannot find module 'request'
+Require stack:
+- C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\app\js\zapphub.js
+- C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\app\js\routes.js
+- C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:982:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:864:27)
+    at Module.require (internal/modules/cjs/loader.js:1044:19)
+    at require (internal/modules/cjs/helpers.js:77:18)
+    at Object.<anonymous> (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\app\js\zapphub.js:1:15)
+    at Module._compile (internal/modules/cjs/loader.js:1158:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+    at Module.load (internal/modules/cjs/loader.js:1002:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+    at Module.require (internal/modules/cjs/loader.js:1044:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\Administrator\\Dropbox\\WhatsAppHub\\@Original\\WHUB\\app\\js\\zapphub.js',
+    'C:\\Users\\Administrator\\Dropbox\\WhatsAppHub\\@Original\\WHUB\\app\\js\\routes.js',
+    'C:\\Users\\Administrator\\Dropbox\\WhatsAppHub\\@Original\\WHUB\\server\\index.js'
+  ]
+}
+internal/modules/cjs/loader.js:985
+  throw err;
+  ^
+
+Error: Cannot find module 'request'
+Require stack:
+- C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\app\js\zapphub.js
+- C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\app\js\routes.js
+- C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:982:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:864:27)
+    at Module.require (internal/modules/cjs/loader.js:1044:19)
+    at require (internal/modules/cjs/helpers.js:77:18)
+    at Object.<anonymous> (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\app\js\zapphub.js:1:15)
+    at Module._compile (internal/modules/cjs/loader.js:1158:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+    at Module.load (internal/modules/cjs/loader.js:1002:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+    at Module.require (internal/modules/cjs/loader.js:1044:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\Administrator\\Dropbox\\WhatsAppHub\\@Original\\WHUB\\app\\js\\zapphub.js',
+    'C:\\Users\\Administrator\\Dropbox\\WhatsAppHub\\@Original\\WHUB\\app\\js\\routes.js',
+    'C:\\Users\\Administrator\\Dropbox\\WhatsAppHub\\@Original\\WHUB\\server\\index.js'
+  ]
+}
+internal/modules/cjs/loader.js:985
+  throw err;
+  ^
+
+Error: Cannot find module 'request'
+Require stack:
+- C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\app\js\zapphub.js
+- C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\app\js\routes.js
+- C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:982:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:864:27)
+    at Module.require (internal/modules/cjs/loader.js:1044:19)
+    at require (internal/modules/cjs/helpers.js:77:18)
+    at Object.<anonymous> (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\app\js\zapphub.js:1:15)
+    at Module._compile (internal/modules/cjs/loader.js:1158:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+    at Module.load (internal/modules/cjs/loader.js:1002:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+    at Module.require (internal/modules/cjs/loader.js:1044:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\Administrator\\Dropbox\\WhatsAppHub\\@Original\\WHUB\\app\\js\\zapphub.js',
+    'C:\\Users\\Administrator\\Dropbox\\WhatsAppHub\\@Original\\WHUB\\app\\js\\routes.js',
+    'C:\\Users\\Administrator\\Dropbox\\WhatsAppHub\\@Original\\WHUB\\server\\index.js'
+  ]
+}
+internal/modules/cjs/loader.js:985
+  throw err;
+  ^
+
+Error: Cannot find module 'request'
+Require stack:
+- C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\app\js\zapphub.js
+- C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\app\js\routes.js
+- C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:982:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:864:27)
+    at Module.require (internal/modules/cjs/loader.js:1044:19)
+    at require (internal/modules/cjs/helpers.js:77:18)
+    at Object.<anonymous> (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\app\js\zapphub.js:1:15)
+    at Module._compile (internal/modules/cjs/loader.js:1158:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+    at Module.load (internal/modules/cjs/loader.js:1002:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+    at Module.require (internal/modules/cjs/loader.js:1044:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\Administrator\\Dropbox\\WhatsAppHub\\@Original\\WHUB\\app\\js\\zapphub.js',
+    'C:\\Users\\Administrator\\Dropbox\\WhatsAppHub\\@Original\\WHUB\\app\\js\\routes.js',
+    'C:\\Users\\Administrator\\Dropbox\\WhatsAppHub\\@Original\\WHUB\\server\\index.js'
+  ]
+}
+internal/modules/cjs/loader.js:985
+  throw err;
+  ^
+
+Error: Cannot find module 'request'
+Require stack:
+- C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\app\js\zapphub.js
+- C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\app\js\routes.js
+- C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:982:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:864:27)
+    at Module.require (internal/modules/cjs/loader.js:1044:19)
+    at require (internal/modules/cjs/helpers.js:77:18)
+    at Object.<anonymous> (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\app\js\zapphub.js:1:15)
+    at Module._compile (internal/modules/cjs/loader.js:1158:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1178:10)
+    at Module.load (internal/modules/cjs/loader.js:1002:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:901:14)
+    at Module.require (internal/modules/cjs/loader.js:1044:19) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    'C:\\Users\\Administrator\\Dropbox\\WhatsAppHub\\@Original\\WHUB\\app\\js\\zapphub.js',
+    'C:\\Users\\Administrator\\Dropbox\\WhatsAppHub\\@Original\\WHUB\\app\\js\\routes.js',
+    'C:\\Users\\Administrator\\Dropbox\\WhatsAppHub\\@Original\\WHUB\\server\\index.js'
+  ]
+}
+(node:3952) UnhandledPromiseRejectionWarning: TypeError [ERR_INVALID_ARG_TYPE]: The "url" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:117:11)
+    at Url.parse (url.js:159:3)
+    at Object.urlParse [as parse] (url.js:154:13)
+    at dispatchHttpRequest (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\adapters\http.js:91:22)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\adapters\http.js:46:10)
+    at dispatchRequest (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\core\dispatchRequest.js:52:10)
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+(node:3952) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 3)
+(node:3952) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.
+(node:3952) UnhandledPromiseRejectionWarning: TypeError [ERR_INVALID_ARG_TYPE]: The "url" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:117:11)
+    at Url.parse (url.js:159:3)
+    at Object.urlParse [as parse] (url.js:154:13)
+    at dispatchHttpRequest (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\adapters\http.js:91:22)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\adapters\http.js:46:10)
+    at dispatchRequest (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\core\dispatchRequest.js:52:10)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+(node:3952) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 6)
+(node:3952) UnhandledPromiseRejectionWarning: TypeError [ERR_INVALID_ARG_TYPE]: The "url" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:117:11)
+    at Url.parse (url.js:159:3)
+    at Object.urlParse [as parse] (url.js:154:13)
+    at dispatchHttpRequest (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\adapters\http.js:91:22)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\adapters\http.js:46:10)
+    at dispatchRequest (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\core\dispatchRequest.js:52:10)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+(node:3952) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 9)
+(node:3952) UnhandledPromiseRejectionWarning: TypeError [ERR_INVALID_ARG_TYPE]: The "url" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:117:11)
+    at Url.parse (url.js:159:3)
+    at Object.urlParse [as parse] (url.js:154:13)
+    at dispatchHttpRequest (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\adapters\http.js:91:22)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\adapters\http.js:46:10)
+    at dispatchRequest (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\core\dispatchRequest.js:52:10)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+(node:3952) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 12)
+(node:3952) UnhandledPromiseRejectionWarning: TypeError [ERR_INVALID_ARG_TYPE]: The "url" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:117:11)
+    at Url.parse (url.js:159:3)
+    at Object.urlParse [as parse] (url.js:154:13)
+    at dispatchHttpRequest (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\adapters\http.js:91:22)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\adapters\http.js:46:10)
+    at dispatchRequest (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\core\dispatchRequest.js:52:10)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+(node:3952) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 15)
+(node:3952) UnhandledPromiseRejectionWarning: TypeError [ERR_INVALID_ARG_TYPE]: The "url" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:117:11)
+    at Url.parse (url.js:159:3)
+    at Object.urlParse [as parse] (url.js:154:13)
+    at dispatchHttpRequest (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\adapters\http.js:91:22)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\adapters\http.js:46:10)
+    at dispatchRequest (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\core\dispatchRequest.js:52:10)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+(node:3952) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 18)
+(node:3952) UnhandledPromiseRejectionWarning: TypeError [ERR_INVALID_ARG_TYPE]: The "url" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:117:11)
+    at Url.parse (url.js:159:3)
+    at Object.urlParse [as parse] (url.js:154:13)
+    at dispatchHttpRequest (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\adapters\http.js:91:22)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\adapters\http.js:46:10)
+    at dispatchRequest (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\core\dispatchRequest.js:52:10)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+(node:3952) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 21)
+(node:3952) UnhandledPromiseRejectionWarning: TypeError [ERR_INVALID_ARG_TYPE]: The "url" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:117:11)
+    at Url.parse (url.js:159:3)
+    at Object.urlParse [as parse] (url.js:154:13)
+    at dispatchHttpRequest (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\adapters\http.js:91:22)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\adapters\http.js:46:10)
+    at dispatchRequest (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\core\dispatchRequest.js:52:10)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+(node:3952) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 24)
+(node:3952) UnhandledPromiseRejectionWarning: TypeError [ERR_INVALID_ARG_TYPE]: The "url" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:117:11)
+    at Url.parse (url.js:159:3)
+    at Object.urlParse [as parse] (url.js:154:13)
+    at dispatchHttpRequest (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\adapters\http.js:91:22)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\adapters\http.js:46:10)
+    at dispatchRequest (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\core\dispatchRequest.js:52:10)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+(node:3952) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 27)
+(node:3952) UnhandledPromiseRejectionWarning: TypeError [ERR_INVALID_ARG_TYPE]: The "url" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:117:11)
+    at Url.parse (url.js:159:3)
+    at Object.urlParse [as parse] (url.js:154:13)
+    at dispatchHttpRequest (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\adapters\http.js:91:22)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\adapters\http.js:46:10)
+    at dispatchRequest (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\core\dispatchRequest.js:52:10)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+(node:3952) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 30)
+(node:3952) UnhandledPromiseRejectionWarning: TypeError [ERR_INVALID_ARG_TYPE]: The "url" argument must be of type string. Received undefined
+    at validateString (internal/validators.js:117:11)
+    at Url.parse (url.js:159:3)
+    at Object.urlParse [as parse] (url.js:154:13)
+    at dispatchHttpRequest (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\adapters\http.js:91:22)
+    at new Promise (<anonymous>)
+    at httpAdapter (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\adapters\http.js:46:10)
+    at dispatchRequest (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\axios\lib\core\dispatchRequest.js:52:10)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+(node:3952) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 33)
+(node:3796) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'replace' of undefined
+    at sendMessage (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\app\js\zapphub.js:59:40)
+    at Layer.handle [as handle_request] (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\express\lib\router\index.js:47:12)
+(node:3796) UnhandledPromiseRejectionWarning: Unhandled promise rejection. This error originated either by throwing inside of an async function without a catch block, or by rejecting a promise which was not handled with .catch(). To terminate the node process on unhandled promise rejection, use the CLI flag `--unhandled-rejections=strict` (see https://nodejs.org/api/cli.html#cli_unhandled_rejections_mode). (rejection id: 1)
+(node:3796) [DEP0018] DeprecationWarning: Unhandled promise rejections are deprecated. In the future, promise rejections that are not handled will terminate the Node.js process with a non-zero exit code.

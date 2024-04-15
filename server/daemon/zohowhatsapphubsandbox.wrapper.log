@@ -1,0 +1,532 @@
+2021-01-18 23:35:01 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-01-18 23:35:01 - Started 1748
+2021-01-18 23:35:26 - Stopping zohowhatsapphubsandbox.exe
+2021-01-18 23:35:26 - ProcessKill 1748
+2021-01-18 23:35:26 - Found child process: 4680 Name: conhost.exe
+2021-01-18 23:35:26 - Found child process: 5836 Name: node.exe
+2021-01-18 23:35:26 - Stopping process 4680
+2021-01-18 23:35:26 - Send SIGINT 4680
+2021-01-18 23:35:26 - SIGINT to 4680 failed - Killing as fallback
+2021-01-18 23:35:27 - Stopping process 5836
+2021-01-18 23:35:27 - Send SIGINT 5836
+2021-01-18 23:35:27 - SIGINT to 5836 failed - Killing as fallback
+2021-01-18 23:35:27 - Stopping process 1748
+2021-01-18 23:35:27 - Send SIGINT 1748
+2021-01-18 23:35:27 - SIGINT to 1748 failed - Killing as fallback
+2021-01-18 23:35:27 - Finished zohowhatsapphubsandbox.exe
+2021-01-18 23:35:48 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-01-18 23:35:48 - Started 6024
+2021-01-18 23:35:53 - Stopping zohowhatsapphubsandbox.exe
+2021-01-18 23:35:53 - ProcessKill 6024
+2021-01-18 23:35:53 - Found child process: 3080 Name: conhost.exe
+2021-01-18 23:35:53 - Found child process: 1948 Name: node.exe
+2021-01-18 23:35:53 - Stopping process 3080
+2021-01-18 23:35:53 - Send SIGINT 3080
+2021-01-18 23:35:53 - SIGINT to 3080 failed - Killing as fallback
+2021-01-18 23:35:53 - Stopping process 1948
+2021-01-18 23:35:53 - Send SIGINT 1948
+2021-01-18 23:35:53 - SIGINT to 1948 failed - Killing as fallback
+2021-01-18 23:35:53 - Stopping process 6024
+2021-01-18 23:35:53 - Send SIGINT 6024
+2021-01-18 23:35:53 - SIGINT to 6024 failed - Killing as fallback
+2021-01-18 23:35:53 - Finished zohowhatsapphubsandbox.exe
+2021-02-12 14:46:30 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-02-12 14:46:30 - Started 2848
+2021-02-12 15:12:10 - Stopping zohowhatsapphubsandbox.exe
+2021-02-12 15:12:10 - ProcessKill 2848
+2021-02-12 15:12:10 - Found child process: 3096 Name: conhost.exe
+2021-02-12 15:12:10 - Found child process: 4076 Name: node.exe
+2021-02-12 15:12:10 - Stopping process 3096
+2021-02-12 15:12:10 - Send SIGINT 3096
+2021-02-12 15:12:10 - SIGINT to 3096 failed - Killing as fallback
+2021-02-12 15:12:10 - Stopping process 4076
+2021-02-12 15:12:10 - Send SIGINT 4076
+2021-02-12 15:12:10 - SIGINT to 4076 failed - Killing as fallback
+2021-02-12 15:12:10 - Stopping process 2848
+2021-02-12 15:12:10 - Send SIGINT 2848
+2021-02-12 15:12:10 - SIGINT to 2848 failed - Killing as fallback
+2021-02-12 15:12:10 - Finished zohowhatsapphubsandbox.exe
+2021-02-24 13:25:51 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-02-24 13:25:51 - Started 4220
+2021-03-16 12:50:52 - Stopping zohowhatsapphubsandbox.exe
+2021-03-16 12:50:52 - ProcessKill 4220
+2021-03-16 12:50:53 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2021-03-16 12:51:36 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-03-16 12:51:36 - Started 2912
+2021-03-16 13:57:28 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-03-16 13:57:28 - Started 5880
+2021-04-12 13:59:38 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-04-12 13:59:38 - Started 2924
+2021-04-13 14:56:53 - Stopping zohowhatsapphubsandbox.exe
+2021-04-13 14:56:53 - ProcessKill 2924
+2021-04-13 14:56:54 - Found child process: 3016 Name: conhost.exe
+2021-04-13 14:56:54 - Found child process: 3692 Name: node.exe
+2021-04-13 14:56:54 - Stopping process 3016
+2021-04-13 14:56:54 - Send SIGINT 3016
+2021-04-13 14:56:54 - SIGINT to 3016 failed - Killing as fallback
+2021-04-13 14:56:54 - Stopping process 3692
+2021-04-13 14:56:54 - Send SIGINT 3692
+2021-04-13 14:56:54 - SIGINT to 3692 failed - Killing as fallback
+2021-04-13 14:56:54 - Stopping process 2924
+2021-04-13 14:56:54 - Send SIGINT 2924
+2021-04-13 14:56:54 - SIGINT to 2924 failed - Killing as fallback
+2021-04-13 14:56:54 - Finished zohowhatsapphubsandbox.exe
+2021-05-24 17:28:50 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-05-24 17:28:50 - Started 2948
+2021-05-31 18:28:35 - Stopping zohowhatsapphubsandbox.exe
+2021-05-31 18:28:35 - ProcessKill 2948
+2021-05-31 18:28:35 - Found child process: 3052 Name: conhost.exe
+2021-05-31 18:28:35 - Found child process: 3952 Name: node.exe
+2021-05-31 18:28:35 - Stopping process 3052
+2021-05-31 18:28:35 - Send SIGINT 3052
+2021-05-31 18:28:36 - SIGINT to 3052 failed - Killing as fallback
+2021-05-31 18:28:36 - Stopping process 3952
+2021-05-31 18:28:36 - Send SIGINT 3952
+2021-05-31 18:28:36 - SIGINT to 3952 failed - Killing as fallback
+2021-05-31 18:28:36 - Stopping process 2948
+2021-05-31 18:28:36 - Send SIGINT 2948
+2021-05-31 18:28:36 - SIGINT to 2948 failed - Killing as fallback
+2021-05-31 18:28:36 - Finished zohowhatsapphubsandbox.exe
+2021-06-29 14:49:49 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-06-29 14:49:49 - Started 2972
+2022-04-18 16:52:01 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-04-18 16:52:01 - Started 1784
+2022-05-02 13:23:19 - Stopping zohowhatsapphubsandbox.exe
+2022-05-02 13:23:19 - ProcessKill 1784
+2022-05-02 13:23:19 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-05-02 13:24:06 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-05-02 13:24:06 - Started 2876
+2022-06-06 14:58:35 - Stopping zohowhatsapphubsandbox.exe
+2022-06-06 14:58:35 - Finished zohowhatsapphubsandbox.exe
+2022-06-06 14:59:23 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-06-06 14:59:23 - Started 2892
+2022-06-20 21:49:55 - Stopping zohowhatsapphubsandbox.exe
+2022-06-20 21:49:55 - ProcessKill 2892
+2022-06-20 21:49:56 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-06-20 21:50:45 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-06-20 21:50:45 - Started 2440
+2022-06-20 21:55:49 - Stopping zohowhatsapphubsandbox.exe
+2022-06-20 21:55:49 - ProcessKill 2440
+2022-06-20 21:55:50 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-06-20 21:56:34 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-06-20 21:56:34 - Started 3040
+2022-07-15 17:51:18 - Stopping zohowhatsapphubsandbox.exe
+2022-07-15 17:51:18 - ProcessKill 3040
+2022-07-15 17:51:19 - Found child process: 1716 Name: conhost.exe
+2022-07-15 17:51:19 - Found child process: 3912 Name: node.exe
+2022-07-15 17:51:19 - Stopping process 1716
+2022-07-15 17:51:19 - Send SIGINT 1716
+2022-07-15 17:51:20 - SIGINT to 1716 failed - Killing as fallback
+2022-07-15 17:51:20 - Stopping process 3912
+2022-07-15 17:51:20 - Send SIGINT 3912
+2022-07-15 17:51:20 - SIGINT to 3912 failed - Killing as fallback
+2022-07-15 17:51:20 - Stopping process 3040
+2022-07-15 17:51:20 - Send SIGINT 3040
+2022-07-15 17:51:20 - SIGINT to 3040 failed - Killing as fallback
+2022-07-15 17:51:20 - Finished zohowhatsapphubsandbox.exe
+2022-08-01 13:57:19 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-08-01 13:57:19 - Started 2864
+2022-08-25 15:04:07 - Stopping zohowhatsapphubsandbox.exe
+2022-08-25 15:04:07 - ProcessKill 2864
+2022-08-25 15:04:08 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-08-25 15:04:53 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-08-25 15:04:53 - Started 2908
+2022-09-05 20:25:00 - Stopping zohowhatsapphubsandbox.exe
+2022-09-05 20:25:00 - ProcessKill 2908
+2022-09-05 20:25:01 - Found child process: 3012 Name: conhost.exe
+2022-09-05 20:25:01 - Found child process: 3796 Name: node.exe
+2022-09-05 20:25:01 - Stopping process 3012
+2022-09-05 20:25:01 - Send SIGINT 3012
+2022-09-05 20:25:01 - SIGINT to 3012 failed - Killing as fallback
+2022-09-05 20:25:01 - Stopping process 3796
+2022-09-05 20:25:01 - Send SIGINT 3796
+2022-09-05 20:25:01 - SIGINT to 3796 failed - Killing as fallback
+2022-09-05 20:25:01 - Stopping process 2908
+2022-09-05 20:25:01 - Send SIGINT 2908
+2022-09-05 20:25:01 - SIGINT to 2908 failed - Killing as fallback
+2022-09-05 20:25:01 - Finished zohowhatsapphubsandbox.exe
+2022-10-04 13:10:27 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-10-04 13:10:27 - Started 2872
+2022-10-04 14:36:54 - Stopping zohowhatsapphubsandbox.exe
+2022-10-04 14:36:54 - ProcessKill 2872
+2022-10-04 14:36:55 - Found child process: 2960 Name: conhost.exe
+2022-10-04 14:36:55 - Found child process: 3832 Name: node.exe
+2022-10-04 14:36:55 - Stopping process 2960
+2022-10-04 14:36:55 - Send SIGINT 2960
+2022-10-04 14:36:55 - SIGINT to 2960 failed - Killing as fallback
+2022-10-04 14:36:55 - Stopping process 3832
+2022-10-04 14:36:55 - Send SIGINT 3832
+2022-10-04 14:36:55 - SIGINT to 3832 failed - Killing as fallback
+2022-10-04 14:36:55 - Stopping process 2872
+2022-10-04 14:36:55 - Send SIGINT 2872
+2022-10-04 14:36:55 - SIGINT to 2872 failed - Killing as fallback
+2022-10-04 14:36:55 - Finished zohowhatsapphubsandbox.exe
+2022-10-04 14:37:43 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-10-04 14:37:43 - Started 3368
+2022-10-04 15:25:55 - Stopping zohowhatsapphubsandbox.exe
+2022-10-04 15:25:55 - ProcessKill 3368
+2022-10-04 15:25:56 - Found child process: 3640 Name: conhost.exe
+2022-10-04 15:25:56 - Found child process: 3332 Name: node.exe
+2022-10-04 15:25:56 - Stopping process 3640
+2022-10-04 15:25:56 - Send SIGINT 3640
+2022-10-04 15:25:56 - SIGINT to 3640 failed - Killing as fallback
+2022-10-04 15:25:56 - Stopping process 3332
+2022-10-04 15:25:56 - Send SIGINT 3332
+2022-10-04 15:25:56 - SIGINT to 3332 failed - Killing as fallback
+2022-10-04 15:25:56 - Stopping process 3368
+2022-10-04 15:25:56 - Send SIGINT 3368
+2022-10-04 15:25:56 - SIGINT to 3368 failed - Killing as fallback
+2022-10-04 15:25:56 - Finished zohowhatsapphubsandbox.exe
+2022-10-04 15:26:24 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-10-04 15:26:24 - Started 6876
+2022-10-04 15:40:15 - Stopping zohowhatsapphubsandbox.exe
+2022-10-04 15:40:15 - ProcessKill 6876
+2022-10-04 15:40:15 - Found child process: 1800 Name: conhost.exe
+2022-10-04 15:40:15 - Found child process: 5184 Name: node.exe
+2022-10-04 15:40:15 - Stopping process 1800
+2022-10-04 15:40:15 - Send SIGINT 1800
+2022-10-04 15:40:15 - SIGINT to 1800 failed - Killing as fallback
+2022-10-04 15:40:15 - Stopping process 5184
+2022-10-04 15:40:15 - Send SIGINT 5184
+2022-10-04 15:40:15 - SIGINT to 5184 failed - Killing as fallback
+2022-10-04 15:40:15 - Stopping process 6876
+2022-10-04 15:40:15 - Send SIGINT 6876
+2022-10-04 15:40:15 - SIGINT to 6876 failed - Killing as fallback
+2022-10-04 15:40:15 - Finished zohowhatsapphubsandbox.exe
+2022-10-05 02:30:27 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-10-05 02:30:27 - Started 5540
+2022-10-05 02:31:10 - Stopping zohowhatsapphubsandbox.exe
+2022-10-05 02:31:10 - ProcessKill 5540
+2022-10-05 02:31:10 - Found child process: 1260 Name: conhost.exe
+2022-10-05 02:31:10 - Found child process: 7704 Name: node.exe
+2022-10-05 02:31:10 - Stopping process 1260
+2022-10-05 02:31:10 - Send SIGINT 1260
+2022-10-05 02:31:10 - SIGINT to 1260 failed - Killing as fallback
+2022-10-05 02:31:10 - Stopping process 7704
+2022-10-05 02:31:10 - Send SIGINT 7704
+2022-10-05 02:31:10 - SIGINT to 7704 failed - Killing as fallback
+2022-10-05 02:31:10 - Stopping process 5540
+2022-10-05 02:31:10 - Send SIGINT 5540
+2022-10-05 02:31:10 - SIGINT to 5540 failed - Killing as fallback
+2022-10-05 02:31:10 - Finished zohowhatsapphubsandbox.exe
+2022-10-05 02:31:11 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-10-05 02:31:11 - Started 2736
+2022-10-06 02:31:01 - Stopping zohowhatsapphubsandbox.exe
+2022-10-06 02:31:01 - ProcessKill 2736
+2022-10-06 02:31:01 - Found child process: 5340 Name: conhost.exe
+2022-10-06 02:31:01 - Found child process: 4324 Name: node.exe
+2022-10-06 02:31:01 - Stopping process 5340
+2022-10-06 02:31:01 - Send SIGINT 5340
+2022-10-06 02:31:02 - SIGINT to 5340 failed - Killing as fallback
+2022-10-06 02:31:02 - Stopping process 4324
+2022-10-06 02:31:02 - Send SIGINT 4324
+2022-10-06 02:31:02 - SIGINT to 4324 failed - Killing as fallback
+2022-10-06 02:31:02 - Stopping process 2736
+2022-10-06 02:31:02 - Send SIGINT 2736
+2022-10-06 02:31:02 - SIGINT to 2736 failed - Killing as fallback
+2022-10-06 02:31:02 - Finished zohowhatsapphubsandbox.exe
+2022-10-06 02:31:03 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-10-06 02:31:03 - Started 4152
+2022-10-07 02:30:52 - Stopping zohowhatsapphubsandbox.exe
+2022-10-07 02:30:52 - ProcessKill 4152
+2022-10-07 02:30:52 - Found child process: 6824 Name: conhost.exe
+2022-10-07 02:30:52 - Found child process: 6496 Name: node.exe
+2022-10-07 02:30:52 - Stopping process 6824
+2022-10-07 02:30:52 - Send SIGINT 6824
+2022-10-07 02:30:52 - SIGINT to 6824 failed - Killing as fallback
+2022-10-07 02:30:52 - Stopping process 6496
+2022-10-07 02:30:52 - Send SIGINT 6496
+2022-10-07 02:30:52 - SIGINT to 6496 failed - Killing as fallback
+2022-10-07 02:30:52 - Stopping process 4152
+2022-10-07 02:30:52 - Send SIGINT 4152
+2022-10-07 02:30:52 - SIGINT to 4152 failed - Killing as fallback
+2022-10-07 02:30:52 - Finished zohowhatsapphubsandbox.exe
+2022-10-07 02:30:53 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-10-07 02:30:53 - Started 552
+2022-10-08 02:31:23 - Stopping zohowhatsapphubsandbox.exe
+2022-10-08 02:31:23 - ProcessKill 552
+2022-10-08 02:31:24 - Found child process: 2872 Name: conhost.exe
+2022-10-08 02:31:24 - Found child process: 3368 Name: node.exe
+2022-10-08 02:31:24 - Stopping process 2872
+2022-10-08 02:31:24 - Send SIGINT 2872
+2022-10-08 02:31:24 - SIGINT to 2872 failed - Killing as fallback
+2022-10-08 02:31:24 - Stopping process 3368
+2022-10-08 02:31:24 - Send SIGINT 3368
+2022-10-08 02:31:24 - SIGINT to 3368 failed - Killing as fallback
+2022-10-08 02:31:24 - Stopping process 552
+2022-10-08 02:31:24 - Send SIGINT 552
+2022-10-08 02:31:24 - SIGINT to 552 failed - Killing as fallback
+2022-10-08 02:31:24 - Finished zohowhatsapphubsandbox.exe
+2022-10-08 02:31:25 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-10-08 02:31:25 - Started 7556
+2022-10-09 02:31:13 - Stopping zohowhatsapphubsandbox.exe
+2022-10-09 02:31:13 - ProcessKill 7556
+2022-10-09 02:31:14 - Found child process: 1152 Name: conhost.exe
+2022-10-09 02:31:14 - Found child process: 6632 Name: node.exe
+2022-10-09 02:31:14 - Stopping process 1152
+2022-10-09 02:31:14 - Send SIGINT 1152
+2022-10-09 02:31:14 - SIGINT to 1152 failed - Killing as fallback
+2022-10-09 02:31:14 - Stopping process 6632
+2022-10-09 02:31:14 - Send SIGINT 6632
+2022-10-09 02:31:14 - SIGINT to 6632 failed - Killing as fallback
+2022-10-09 02:31:14 - Stopping process 7556
+2022-10-09 02:31:14 - Send SIGINT 7556
+2022-10-09 02:31:14 - SIGINT to 7556 failed - Killing as fallback
+2022-10-09 02:31:14 - Finished zohowhatsapphubsandbox.exe
+2022-10-09 02:31:15 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-10-09 02:31:15 - Started 4488
+2022-10-10 02:31:00 - Stopping zohowhatsapphubsandbox.exe
+2022-10-10 02:31:00 - ProcessKill 4488
+2022-10-10 02:31:00 - Found child process: 7904 Name: conhost.exe
+2022-10-10 02:31:00 - Found child process: 7908 Name: node.exe
+2022-10-10 02:31:00 - Stopping process 7904
+2022-10-10 02:31:00 - Send SIGINT 7904
+2022-10-10 02:31:00 - SIGINT to 7904 failed - Killing as fallback
+2022-10-10 02:31:00 - Stopping process 7908
+2022-10-10 02:31:00 - Send SIGINT 7908
+2022-10-10 02:31:00 - SIGINT to 7908 failed - Killing as fallback
+2022-10-10 02:31:00 - Stopping process 4488
+2022-10-10 02:31:00 - Send SIGINT 4488
+2022-10-10 02:31:00 - SIGINT to 4488 failed - Killing as fallback
+2022-10-10 02:31:00 - Finished zohowhatsapphubsandbox.exe
+2022-10-10 02:31:01 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-10-10 02:31:01 - Started 3424
+2022-10-11 02:32:22 - Stopping zohowhatsapphubsandbox.exe
+2022-10-11 02:32:25 - ProcessKill 3424
+2022-10-11 02:32:35 - Found child process: 7604 Name: conhost.exe
+2022-10-11 02:32:35 - Found child process: 7204 Name: node.exe
+2022-10-11 02:32:41 - Stopping process 7604
+2022-10-11 02:32:41 - Send SIGINT 7604
+2022-10-11 02:32:43 - SIGINT to 7604 failed - Killing as fallback
+2022-10-11 02:32:59 - Stopping process 7204
+2022-10-11 02:33:00 - Send SIGINT 7204
+2022-10-11 02:33:00 - SIGINT to 7204 failed - Killing as fallback
+2022-10-11 02:33:01 - Stopping process 3424
+2022-10-11 02:33:01 - Send SIGINT 3424
+2022-10-11 02:33:02 - SIGINT to 3424 failed - Killing as fallback
+2022-10-11 02:33:02 - Finished zohowhatsapphubsandbox.exe
+2022-10-11 09:18:50 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-10-11 09:18:52 - Started 3412
+2022-10-17 21:42:06 - Stopping zohowhatsapphubsandbox.exe
+2022-10-17 21:42:06 - ProcessKill 3412
+2022-10-17 21:42:07 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-10-17 21:43:25 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-10-17 21:43:25 - Started 3044
+2022-11-08 00:01:11 - Stopping zohowhatsapphubsandbox.exe
+2022-11-08 00:01:11 - ProcessKill 3044
+2022-11-08 00:01:12 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-11-08 00:01:28 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-11-08 00:01:28 - Started 3096
+2022-11-21 16:43:03 - Stopping zohowhatsapphubsandbox.exe
+2022-11-21 16:43:03 - ProcessKill 3096
+2022-11-21 16:43:04 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2022-11-21 16:43:24 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-11-21 16:43:24 - Started 3176
+2022-12-06 14:34:00 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-12-06 14:34:00 - Started 3404
+2022-12-20 15:02:50 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2022-12-20 15:02:50 - Started 3304
+2023-01-02 15:29:08 - Stopping zohowhatsapphubsandbox.exe
+2023-01-02 15:29:08 - ProcessKill 3304
+2023-01-02 15:29:08 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-01-02 15:37:22 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-01-02 15:37:22 - Started 4136
+2023-01-24 18:42:36 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-01-24 18:42:37 - Started 3456
+2023-01-24 19:20:26 - Stopping zohowhatsapphubsandbox.exe
+2023-01-24 19:20:26 - ProcessKill 3456
+2023-01-24 19:20:28 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-01-24 19:24:44 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-01-24 19:24:44 - Started 3256
+2023-01-24 19:33:02 - Stopping zohowhatsapphubsandbox.exe
+2023-01-24 19:33:02 - ProcessKill 3256
+2023-01-24 19:33:03 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-01-31 12:47:35 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-01-31 12:47:35 - Started 3120
+2023-02-01 14:17:42 - Stopping zohowhatsapphubsandbox.exe
+2023-02-01 14:17:42 - ProcessKill 3120
+2023-02-01 14:17:43 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-02-01 14:20:22 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-02-01 14:20:23 - Started 3204
+2023-02-22 18:25:36 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-02-22 18:25:36 - Started 368
+2023-03-15 13:30:41 - Stopping zohowhatsapphubsandbox.exe
+2023-03-15 13:30:41 - ProcessKill 368
+2023-03-15 13:30:42 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-03-15 13:31:18 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-03-15 13:31:18 - Started 3892
+2023-03-15 13:33:19 - Stopping zohowhatsapphubsandbox.exe
+2023-03-15 13:33:19 - ProcessKill 3892
+2023-03-15 13:33:20 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-03-15 13:33:42 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-03-15 13:33:42 - Started 4084
+2023-03-16 12:25:51 - Stopping zohowhatsapphubsandbox.exe
+2023-03-16 12:25:51 - ProcessKill 4084
+2023-03-16 12:25:52 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-03-16 12:26:13 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-03-16 12:26:13 - Started 4084
+2023-03-16 12:28:42 - Stopping zohowhatsapphubsandbox.exe
+2023-03-16 12:28:42 - ProcessKill 4084
+2023-03-16 12:28:43 - Shutdown exception
+Message:A system shutdown is in progress. (Exception from HRESULT: 0x8007045B)
+Stacktrace:   at System.Runtime.InteropServices.Marshal.ThrowExceptionForHRInternal(Int32 errorCode, IntPtr errorInfo)
+   at System.Management.ManagementScope.InitializeGuts(Object o)
+   at System.Management.ManagementScope.Initialize()
+   at System.Management.ManagementObjectSearcher.Initialize()
+   at System.Management.ManagementObjectSearcher.Get()
+   at winsw.WrapperService.GetChildPids(Int32 pid)
+   at winsw.WrapperService.StopProcessAndChildren(Int32 pid)
+   at winsw.WrapperService.StopIt()
+   at winsw.WrapperService.OnShutdown()
+2023-03-16 12:29:01 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2023-03-16 12:29:01 - Started 3960

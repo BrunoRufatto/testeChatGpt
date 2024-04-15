@@ -1,0 +1,454 @@
+<!doctype html>
+<html>
+
+<head>
+
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+  <link rel="stylesheet" type="text/css" href="../css/settings.css" />
+  <link rel="stylesheet" type="text/css" href="../css/multiple-select.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/switcher.css" />
+  <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+
+  <script type="text/javascript" src="../lib/purify.min.js"></script>
+  <script type="text/javascript" src="../lib/jquery.min.js"></script>
+  <script type="text/javascript" src="../lib/polyfill.min.js"></script>
+  <script type="text/javascript" src="../lib/multiple-select.min.js"></script>
+  <script type="text/javascript" src="../lib/jquery.twbsPagination.js"></script>
+  <script type="text/javascript" src="../lib/es6-promise.min.js"></script>
+  <script type="text/javascript" src="../lib/ZohoCrmHelper.js"></script>
+  <script type="text/javascript" src="../lib/ZSDK.js"></script>
+  <script type="text/javascript" src="../lib/handlebars-v4.0.10.js"></script>
+  <script type="text/javascript" src="../js/settings.js"></script>
+  <!-- <script type="text/javascript" src="../js/jquery.switcher.js"></script>> -->
+  <script type="text/javascript" src="../lib/lc_switch.js"></script>
+
+  <!-- <script src="../lib/ZohoEmbededAppSDK.min.js"></script> -->
+  <!-- <script type="text/javascript" src="../js/sync.js"></script> -->
+
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title key="translate">{{title}}</title>
+
+</head>
+
+<body>
+  <div class="popapulbge dT" id="ErroMsg" style="display: none;">
+
+    <div class="error"><span class="iconboxerror"><span class="erroricon"></span></span><span class="erroText f16 fR"
+        id="spanerror"></span><span class="clo-iconerr" onClick="closeSpanMsg('ErroMsg')">&nbsp;</span></div>
+  </div>
+  <div class="popapulbge dT" id="SuccessMsg" style="display: none;">
+    <div class="success"><span class="iconbox"><span class="successicon"></span></span><span
+        class="sucesText f16 fR"></span><span class="clo-icon" onClick="closeSpanMsg('SuccessMsg')">&nbsp;</span></div>
+  </div>
+  <div id="newLoad" style="display: none;">Loading<span class="one">.</span><span class="two">.</span><span
+      class="three">.</span></div>
+  <div id="allPage" style="margin: 0 20px; display:none;">
+    <div class="tab-link">
+      <ul>
+        <li>
+          <a href="javascript:;" onClick="showtab('tab1',this)" class="activeTab" id="aplicativoTab" disabled="disabled"
+            key="translate"><b>{{tab-app}}</b></a>
+        </li>
+        <li>
+          <a href="javascript:;" id="ativacaoTab" onClick="showtab('tab2',this)" disabled="disabled"
+            key="translate"><b>{{tab-activate}}</b></a>
+        </li>
+        <li>
+          <a href="javascript:;" id="configuracaoTab" onClick="showtab('tab3',this)" disabled="disabled"
+            key="translate"><b>{{tab-setup}}</b></a>
+        </li>
+        <li>
+          <a href="javascript:;" id="comportamentoTab" onClick="showtab('tab4',this)" disabled="disabled"
+            key="translate"><b>{{tab-behavior}}</b></a>
+        </li>
+        <li>
+          <a href="javascript:;" id="suporteTab" onClick="showtab('tab5',this)" disabled="disabled"
+            key="translate"><b>{{tab-support}}</b></a>
+        </li>
+        <li style="float: none;border-bottom: solid 1px #e4e4e4;overflow: auto;padding-top:20px;">
+          &nbsp;
+        </li>
+      </ul>
+    </div>
+
+    <div style="clear:both;border:solid 1px #e4e4e4;border-top:none;overflow: auto;">
+
+      <div id="tab1" class="tab-body" style="display:block;">
+
+        <div class="popapul" style="height: 500px;
+        overflow: auto;">
+          <div>
+            <div class="head FL mT10 mpl_head" key="translate">{{hd-app}}</div>
+            <div id="edit"><button id="btnEdit" class="cancel FR" onclick="showConfig()" disabled="disabled"
+                key="translate">{{btn-edit}}<button></button></div>
+          </div>
+          <div class="filed clearfix CB mB10" style="padding-bottom:0px;">
+            <div id="countryDivParent" class="field flt" style="width:70%;">
+              <p style="margin-bottom: 10px" key="translate">{{txt-sel-country}}</p>
+              <div id="countryDiv"></div>
+            </div>
+
+            <div id="usrDefault" class="field flt" style="width:70%;margin-top:10px;">
+              <p style="margin-bottom: 10px" key="translate">{{txt-sel-app}}</p>
+              <input type="radio" id="NenhumaR" name="aplicativo" value="nenhuma" disabled>
+              <label for="nenhuma" key="translate">{{txt-opt1-app}}</label><br>
+              <input type="radio" id="ZapboxR" name="aplicativo" style="display:none;" value="zapbox" disabled>
+              <label id="idLabelUtalk" for="zapbox" key="translate" style="display:none;">{{txt-opt2-app}}<br></label>
+              <input type="radio" id="ZappHubR" name="aplicativo" value="zapphub" disabled>
+              <label for="zapphub">zapphub (Coming Soon)</label><br>
+              <label id="textNotUtalk" key="translate" style="display:none;color:red">We are excited with you interest,
+                and appreciate that! For while we have integration with App from Brazil, but our development team are
+                working hard to available some new options to run in your country!</label>
+
+            </div>
+          </div>
+          <input type="text"></input>
+          <div class="link" id="saveNcancel" style="display: none;">
+            <button class="save FR mL10" onclick="myFunction()" key="translate">{{btn-save}}</button>
+            <button class="cancel FR" onclick="reloadWebtab()" key="translate">{{btn-cancel}}</button>
+          </div>
+        </div>
+      </div>
+      <div id="tab2" class="tab-body" style="overflow: auto;">
+        <!--ZapBox-->
+        <div id="zapboxContent" class="filed clearfix CB" style="padding-bottom:0px; display: none">
+          <div class="field flt" style="
+            height: 500px;
+            overflow: auto;
+        ">
+            <p style="text-align: center; font-size: 24px" key="translate">
+              {{hd-activate}}
+            </p>
+            <br>
+            <p style="text-align: justify; margin-left: 30px; margin-right: 30px; margin-bottom: 10px" key="translate">
+              {{txt-activate0}}
+            </p>
+            <p class="passoapasso" style="text-align: justify; margin-left: 30px; margin-right: 30px" key="translate">
+              <b>1.</b> {{txt-activate1}}
+              <a href="http://bit.ly/NEWUTALK" target="_blank" style="text-decoration: underline;"
+                key="translate">{{txt-activate1-a}}</a>
+            </p>
+            <p class="passoapasso" style="text-align: justify; margin-left: 30px; margin-right: 30px" key="translate">
+              <b>2.</b> {{txt-activate2}}
+            </p>
+            <p class="passoapasso" style="text-align: justify; margin-left: 30px; margin-right: 30px" key="translate">
+              <b>3.</b> {{txt-activate3}}
+            </p>
+            <p class="passoapasso" style="text-align: justify; margin-left: 50px; margin-right: 30px" key="translate">
+              <b>a)</b> {{txt-activate3a}}
+            </p>
+            <p class="passoapasso"
+              style="text-align: justify; margin-left: 50px; margin-right: 30px; margin-bottom: 30px" key="translate">
+              <b>b)</b> {{txt-activate3b}}
+            </p>
+            <p style="text-align: center">
+              <!-- <img style="width: 600px; height: 350px; margin-bottom: 30px" src="https://uploaddeimagens.com.br/images/002/858/061/original/tela_zapbox_token_%281%29.png?1598904050"></img> -->
+              <img style="width: 800px; height: 450px; margin-bottom: 30px"
+                src="https://www.otentecnologia.com.br/extensions/images/tela1_utalk.png"></img>
+            </p>
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="img01">
+              <div id="caption"></div>
+            </div>
+            <p class="passoapasso" style="text-align: justify; margin-left: 30px; margin-right: 30px" key="translate">
+              <b>4.</b> {{txt-activate4}}
+            </p>
+            <p class="passoapasso" style="text-align: justify; margin-left: 30px; margin-right: 30px" key="translate">
+              <b>5.</b> {{txt-activate5}}
+            </p>
+            <p class="passoapasso"
+              style="letter-spacing: normal; text-align: justify; margin-left: 30px; margin-right: 30px"
+              key="translate">
+              <b>6.</b> {{txt-activate6}}
+            </p>
+            <div class="link">
+              <button id="btnNextZapBox" class="passo FR mL10" onclick="proximoPasso()"
+                style="margin-right: 30px; margin-bottom: 30px" disabled="disabled"
+                key="translate">{{btn-next}}</button>
+            </div>
+          </div>
+        </div>
+        <!--Winzap-->
+        <div id="winzapContent" class="filed clearfix CB mB10" style="padding-bottom:0px; display: none">
+          <div class="field flt" style="
+            height: 500px;
+            overflow: auto;
+        ">
+            <p style="text-align: center; font-size: 24px">
+              zapphub
+            </p>
+            <br>
+            <p style="text-align: justify; margin-left: 30px; margin-right: 30px">
+              Mantenha-se em contato com os grupos de pessoas que são especiais para você, como por exemplo, sua família
+              ou seus amigos. Com as conversas em grupo, você pode compartilhar mensagens, fotos e vídeos com até 256
+              pessoas ao mesmo tempo. Você pode também dar nome aos grupos, silenciá-los, configurar as notificações e
+              muito mais.
+            </p>
+
+
+            <div class="link">
+              <button id="btnNextZappHub" class="passo FR mL10" onclick="proximoPasso()"
+                style="margin-right: 30px; margin-bottom: 30px" disabled="disabled"
+                key="translate">{{btn-next}}</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div id="tab3" class="tab-body" style="height: 600px; overflow: auto;">
+
+        <div id="zapboxConfig" class="popapul" style="display: none; height: 500px;
+              overflow: auto;">
+          <div>
+            <div class="head FL mT10 mpl_head" key="translate">{{hd-setup}}</div>
+            <div id="edit"><button id="btnEditar" class="cancel FR" onclick="showConfigApi()" disabled="disabled"
+                key="translate">{{btn-edit}}</button></div>
+          </div>
+          <div class="filed clearfix CB mB10" style="padding-bottom:0px;">
+            <label class="fldText" style="width:30%;" key="translate">{{fld-setup}}</label>
+            <div id="usrDefault" class="field flt" style="width:40%;">
+              <input type="text" name="current" class="flt" id="apiText" style="font-size:16px" disabled="disabled" />
+            </div>
+            <div class="fldText" id="tokenInvalido" style="width:30%"></div>
+          </div>
+
+          <div class="link" id="saveNcancel2" style="display: none;">
+            <button class="save FR mL10" onclick="saveConf()" key="translate">{{btn-save}}</button>
+            <button class="cancel FR" onclick="reloadWebtab()" key="translate">{{btn-cancel}}</button>
+          </div>
+          <br>
+          <div id="demo">
+
+          </div>
+        </div>
+
+      </div>
+      <div id="tab4" class="tab-body" style="overflow: visible;">
+        <div class="popapul" id="erroDIV" style="height: 500px; overflow: auto; display:none;">
+          <div class="head FL mT10" style="display:contents" key="translate">{{req-message-hd}}</div><br>
+          <div style="margin-top: 10px;">
+            <p><b key="translate">{{req-message2-hd}}</b></p>
+            <p key="translate">{{req-message1}}</p>
+            <p key="translate">{{req-message2}}</p>
+            <p key="translate">{{req-message3}}</p>
+            <p key="translate">{{req-message4}}</p>
+          </div>
+        </div>
+        <div class="popapul" id="comportamentoDIV" style="height: 500px;
+              overflow: auto;">
+
+          <div>
+            <div class="head FL mT10" key="translate">{{hd-behavior}}</div>
+            <div id="edit2" style="display: block;"><button class="cancel FR" name="Edit" onclick="showInput2()"
+                id="btnfieldedit" disabled="disabled" key="translate">{{btn-edit}}</button></div>
+          </div>
+          <!-- <div class="filed clearfix CB mB10" style="padding-bottom:0px;">
+                    <label class="fldText" style="width:30%;">Use Phone Field (Lead)</label>
+                    
+                
+                    <div id="leadDefult"></div>
+                    </div>
+              -->
+
+          <div id="layoutDiv" class="filed clearfix CB mB10" style="padding-bottom:0px;">
+            <label class="fldText" style="width:30%;" key="translate">{{fld-behavior1}}</label>
+            <div id="layoutField" class="field flt" style="width:70%;"></div>
+            <div style="float:right; display: none;font-size: 10px;color: rgb(255,0,0);padding-left: 390px;width:70%;"
+              id="layoutEmpty" key="translate">{{fld-req-message}}</div>
+          </div>
+
+          <div class="filed clearfix CB mB10" id="leadDIV" style="padding-bottom:0px;">
+            <label class="fldText" style="width:30%;" key="translate">{{fld-behavior2}}</label>
+            <div id="leadDefault" class="field flt" style="width:70%;"></div>
+            <div style="float:right; display: none;font-size: 10px;color: rgb(255,0,0);padding-left: 390px;width:70%;"
+              id="leadEmpty" key="translate">{{fld-req-message}}</div>
+          </div>
+
+
+
+          <div class="filed clearfix CB mB10" id="contactDIV" style="padding-bottom:0px;">
+            <label class="fldText" style="width:30%;" key="translate">{{fld-behavior3}}</label>
+            <div id="contactDefault" class="field flt" style="width:70%;"></div>
+            <div style="float:right; display: none;font-size: 10px;color: rgb(255,0,0);padding-left: 390px;width:70%;"
+              id="contactEmpty" key="translate">{{fld-req-message}}</div>
+          </div>
+
+
+          <!-- <div class="filed clearfix CB mB10" style="padding-bottom:0px;">
+                    <label class="fldText" style="width:30%;">Use Phone Field (Account)</label>
+                    
+                    <div id="accountDefult"></div>
+                    </div> -->
+
+          <div class="filed clearfix CB mB10" id="accountDIV" style="padding-bottom:0px;">
+            <label class="fldText" style="width:30%;" key="translate">{{fld-behavior4}}</label>
+            <div id="accountDefault" class="field flt" style="width:70%;"></div>
+            <div style="float:right; display: none;font-size: 10px;color: rgb(255,0,0);padding-left: 390px;width:70%;"
+              id="accountEmpty" key="translate">{{fld-req-message}}</div>
+          </div>
+
+
+          <!-- <div class="filed clearfix CB mB10" style="padding-bottom:0px;">
+                      <label class="fldText" style="width:30%;">Use Phone Field (Deal - from Account)</label>
+                      
+                      <div id="dealDefult"></div>
+                      </div> -->
+
+
+
+          <div class="filed clearfix CB mB10" id="dealDIV" style="padding-bottom:0px;">
+            <label class="fldText" style="width:30%;" key="translate">{{fld-behavior5}}</label>
+            <div id="dealDefault" class="field flt" style="width:70%;"></div>
+            <div style="float:right; display: none;font-size: 10px;color: rgb(255,0,0);padding-left: 390px;width:70%;"
+              id="dealEmpty" key="translate">{{fld-req-message}}</div>
+          </div>
+
+          <div class="filed clearfix CB mB10" id="leadbtnDIV" style="padding-bottom:0px;">
+            <label class="fldText" style="width:30%;" key="translate">{{fld-behavior6}}</label>
+            <div id="dealDefault" class="field flt" style="width:70%;">
+              <div class="onoffswitch">
+                <input type="checkbox" name="onoffswitch" onchange="leadSource()" disabled="disabled"
+                  class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0">
+                <label class="onoffswitch-label" for="myonoffswitch">
+                  <span class="onoffswitch-inner"></span>
+                  <span class="onoffswitch-switch"></span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div id="leadSourceDiv" class="filed clearfix CB mB10" style="padding-bottom:0px;">
+            <label class="fldText" style="width:30%;" key="translate">{{fld-behavior7}}</label>
+            <div id="leadSourceField" class="field flt" style="width:70%;"></div>
+            <div style="float:right; display: none;font-size: 10px;color: rgb(255,0,0);padding-left: 390px;width:70%;"
+              id="leadSourceEmpty" key="translate">{{fld-req-message}}</div>
+          </div>
+
+          <div id="campoObrigatorio">
+            <div class="head FL mT10 mpl_head" style="display: none;" id="fieldRequired" key="translate">
+              {{hd-fld-behavior}}</div>
+            <div id="detailRequired" style="display: none;">
+            </div>
+          </div>
+
+
+          <div class="link" id="saveNcancel3" style="display: none;">
+            <button id="btnfieldok" disabled="disabled" class="save FR mL10" onclick="saveOrgVar2()"
+              key="translate">{{btn-save}}</button>
+            <button id="btnfieldcanc" disabled="disabled" class="cancel FR" onclick="reloadWebtab()"
+              key="translate">{{btn-cancel}}</button>
+          </div>
+        </div>
+
+      </div>
+      <div id="tab5" class="tab-body" style="height: 650px; overflow: auto;">
+
+        <div class="popapul" style="height: 650px;
+              overflow: auto;">
+
+          <div class="filed head FL mT10" key="translate">{{hd-support}}</div>
+          <div class="filed clearfix CB mB10">
+            <table style="width:100%">
+              <tr>
+                <td style="width: 20%">
+                  <label key="translate">{{fld-support1}}</label>
+                </td>
+                <td>
+                  <input type="text" class="form-control inputtext" id="nomeText" style="font-size:14px"><br>
+                  <small id="emptyNome" class="form-text text-muted"
+                    style="display:none; color:red; vertical-align:top;" key="translate">{{fld-req-message}}</small>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label key="translate">{{fld-support2}}</label>
+                </td>
+                <td>
+                  <input type="email" class="form-control inputtext" id="emailText" style="font-size:14px"><br>
+                  <small id="emptyEmail" class="form-text text-muted"
+                    style="display:none;color:red; vertical-align:top;" key="translate">{{fld-req-message}}</small>
+                </td>
+
+              </tr>
+            </table>
+            <div class="filed" style="width:100%; margin-bottom: 50px;"></div>
+            <table style="width:100%">
+              <tr>
+
+                <td style="width: 20%">
+                  <label key="translate">{{fld-support3}}</label>
+                </td>
+                <td>
+                  <select id="ticketType" class="newSelect" style="width:200px;" required="true">
+                    <option value="Problem" key="translate">{{fld-support3a}}</option>
+                    <option value="Question" key="translate">{{fld-support3b}}</option>
+                    <option value="Feature" key="translate">{{fld-support3c}}</option>
+                    <option value="Others" key="translate">{{fld-support3d}}</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label key="translate">{{fld-support4}}</label>
+                </td>
+                <td>
+                  <input type="text" class="form-control inputtext" id="subjectText" style="font-size:14px"><br>
+                  <small id="emptySubject" class="form-text text-muted"
+                    style="display:none;color:red; vertical-align:top;" key="translate">{{fld-req-message}}</small>
+                </td>
+              </tr>
+              <tr>
+                <td style="vertical-align:top;">
+                  <label key="translate">{{fld-support5}}</label>
+                </td>
+                <td>
+                  <textarea class="textarea-control" id="descText"></textarea><br>
+                  <small id="emptyDesc" class="form-text text-muted" style="display:none;color:red; vertical-align:top;"
+                    key="translate">{{fld-req-message}}</small>
+                </td>
+              </tr>
+            </table>
+            <button id="btnSendTicket" class="save FR mL10 button1" onclick="sendTicket()" style="margin-right:37.9%"
+              key="translate">{{btn-send}}</button>
+          </div>
+
+
+        </div>
+        <!--popapul-->
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+  </div>
+  </div>
+
+
+
+
+
+  </div>
+  </div>
+  </div>
+
+</body>
+<script type="text/javascript">
+  $(document).ready(function () {
+
+    initializeWidget();
+
+  })
+
+</script>
+
+</html>

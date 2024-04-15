@@ -1,0 +1,142 @@
+<html>
+<title>Action</title>
+
+<head>
+	<script type="text/javascript" src="../lib/purify.min.js"></script>
+	<script type="text/javascript" src="../lib/polyfill.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../css/select.css" />
+	<link rel="stylesheet" type="text/css" href="../css/customAction.css" />
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="../css/multiple-select.min.css" />
+	<link rel="stylesheet" type="text/css" href="../css/switcher.css" />
+
+	<script type="text/javascript" src="../lib/jquery.js"></script>
+	<script type="text/javascript" src="../lib/ZohoCrmHelper.js"></script>
+  	<script type="text/javascript" src="../lib/ZSDK.js"></script>
+	<!-- <script type="text/javascript" src="../lib/ZohoEmbededAppSDK.min.js"></script> -->
+	
+    <script type="text/javascript" src="../js/customAction.js"></script>
+  	<script type="text/javascript" src="../lib/multiple-select.min.js"></script>
+	  <script type="text/javascript" src="../lib/jquery.caretposition.js"></script>
+	<script type="text/javascript" src="../lib/jquery.switcher.js"></script>
+	<script type="text/javascript" src="../lib/handlebars-v4.0.10.js"></script>
+	<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
+	
+</head>
+
+<body>
+	<div id="loadingDiv" style="display:none">
+		<div class="loadingBG">&nbsp;</div>
+		<div class="loadingText">Loading...</div>
+	</div>
+	<div id="newLoad" style="display: block;">Loading<span class="one">.</span><span class="two">.</span><span
+			class="three">.</span></div>
+	<div id="statusLoad" style="display: none;">Excluindo<span class="one">.</span><span class="two">.</span><span
+			class="three">.</span></div>
+
+			<div class="popapulbge dT" id="ErroMsg" style="display: none">
+				<div class="error">
+				  <span class="iconboxerror"><span class="erroricon"></span></span
+				  ><span class="erroText f16 fR" id="spanerror"></span
+				  >
+				</div>
+			  </div>
+		  
+	
+	<div id="contentDivActionAddToCustomAct" style="display:none;">
+		<div class="popapul" style="height:95%">
+
+         
+              <div class="head FL mT10" key="translate">{{hd-custom-action}}</div>
+              
+         
+  
+			<div class="filed clearfix CB mB10" style="padding-bottom:0px;">
+                <label class="fldText" style="width:30%; padding-bottom: 60px;" key="translate">{{fld-custom-action1}}</label>
+              
+                <div id="radioDefult">
+					<input type="radio" id="radiotemplate" name="gender" value="template" data-div="defineTemplate" checked onclick="Const.customAct.changeRadio(false)">
+					<label for="radiomanual" key="translate">{{fld-custom-action1a}}</label>
+					<br>
+					<input type="radio" id="radiocustom" name="gender" value="custom" data-div="defineManual" onclick="Const.customAct.changeRadio(false)">
+					<label for="radioautomatic" key="translate">{{fld-custom-action1b}}</label>
+					<!--<br>
+					<input type="radio" id="radiodefault" name="gender" value="default" data-div="definePadrao" onclick="Const.dialer.changeRadio()">
+					<label for="radiodefault">Padrão (Configurado)</label>-->
+				</div>
+			</div>
+			  
+			<div id="defineManual" class="divradio" style="display:none">
+				<div class="filed clearfix CB mB10" style="padding-bottom:0px;">
+					<table>
+					<tr>
+					<td style="width:30%; vertical-align: top;">
+						<label class="fldText" style="width:30%;" key="translate">{{fld-custom-action4}}</label>
+					</td>
+					<td style="width:70%">
+						<div id="noteDefult" class="field flt" style="width:70%;">
+						<textarea class="form-control" rows="3" name="" id="modifiedNote" style="width:500px; margin-bottom:10px; resize:none"></textarea>
+						<div style="float:left; display: none;font-size: 10px;color: rgb(255,0,0);padding-left: 320px; width: 200px;" id="noteEmpty" key="translate">
+							{{custom-action-req-message}}</div> 
+						
+						<div id="templateMergeValuesDIV" class="alignleft curv3px pA  pB5 zI10" style="display: none;" >
+								<i class="setDDPopupAbG" style="left: 6px;"><i class="setDDPopupA"></i></i>
+								<ul class="pL0 pR0 pB0 m0" id="searchMergeValues" data-zcqa="searchMergeValues" style="display: none; max-height: 235px;"></ul>
+								<div class="" id="listMergeValues">
+									<div id="moduleOptionsList" class="mT10 mL10 mR10 mB5 curv3px newEditorModuleList">
+									</div>
+									<div class="oA" style="max-height:200px;">
+									</div>
+								</div>
+							</div>
+						</div>
+						</div>
+					</td>
+					</tr>
+					</table>
+				</div>
+			</div>
+			
+			
+            
+
+			<div id="defineTemplate" class="divradio" style="display:none">
+                <div class="filed clearfix CB mB10" style="padding-bottom:0px;">
+					<table>
+					<tr>
+					<td style="width:30%; vertical-align: top;">
+						<label class="fldText" style="width:30%;" key="translate">{{fld-custom-action2}}</label>
+					</td>
+					<td style="width:70%">
+						<div id="divTemplate" class="field flt" style="width:70%;"></div>
+					</td>
+					</tr>
+					
+					<tr>
+					<td style="vertical-align: top; margin-top:10px;">
+						<label class="fldText" style="width:30%;vertical-align:top;" key="translate">{{fld-custom-action3}}</label>
+					</td>
+					<td>
+					<div style="padding-top:10px; width:70%"><textarea class="form-control" rows="3" name="" id="templateText" style="width:500px; margin-bottom:10px;resize:none" disabled></textarea></div>
+					<div style="float:left; display: none;font-size: 10px;color: rgb(255,0,0);padding-left: 320px;" id="selEmpty"key="translate">
+						{{custom-action-req-message}}</div> 
+					</td>
+					</tr>
+					</table>
+				
+			
+            
+			</div>
+		</div>
+		<div class="link" id="saveNcancel" >
+              <button class="save FR mL10" onclick="Const.customAct.saveAction()" key="translate">{{btn-save}}</button>
+			</div>
+          </div>
+	</div>
+	
+
+</body>
+
+</html>

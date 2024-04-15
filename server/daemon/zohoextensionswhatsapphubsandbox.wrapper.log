@@ -1,0 +1,16 @@
+2021-01-18 22:15:20 - Starting C:\Program Files\nodejs\node.exe  --harmony C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\node_modules\node-windows\lib\wrapper.js --file C:\Users\Administrator\Dropbox\WhatsAppHub\@Original\WHUB\server\index.js --scriptoptions= --log "ZOHO EXTENSIONS - WhatsApp Hub (SANDBOX) wrapper" --grow 0.25 --wait 1 --maxrestarts 3 --abortonerror n --stopparentfirst undefined
+2021-01-18 22:15:20 - Started 4984
+2021-01-18 22:15:23 - Stopping zohoextensionswhatsapphubsandbox.exe
+2021-01-18 22:15:23 - ProcessKill 4984
+2021-01-18 22:15:24 - Found child process: 1552 Name: conhost.exe
+2021-01-18 22:15:24 - Found child process: 3252 Name: node.exe
+2021-01-18 22:15:24 - Stopping process 1552
+2021-01-18 22:15:24 - Send SIGINT 1552
+2021-01-18 22:15:24 - SIGINT to 1552 failed - Killing as fallback
+2021-01-18 22:15:24 - Stopping process 3252
+2021-01-18 22:15:24 - Send SIGINT 3252
+2021-01-18 22:15:24 - SIGINT to 3252 failed - Killing as fallback
+2021-01-18 22:15:24 - Stopping process 4984
+2021-01-18 22:15:24 - Send SIGINT 4984
+2021-01-18 22:15:24 - SIGINT to 4984 failed - Killing as fallback
+2021-01-18 22:15:24 - Finished zohoextensionswhatsapphubsandbox.exe

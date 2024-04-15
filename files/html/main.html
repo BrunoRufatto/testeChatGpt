@@ -1,0 +1,48 @@
+<html>
+	<head>
+	  <link rel="stylesheet" href="../css/style.css">
+	  <script src="../js/lib/ZohoEmbededAppSDK.min.js"></script>
+	  <script src="../js/custom.js"></script>
+	  <script src="../js/jquery-min.js"></script>
+	</head>
+	<body>
+		<div class="topband">
+			Hello World - Api Responses
+		</div>
+		<div class="blockQuote">
+			<p class="title">User Info</p>
+			<textarea id="userInfo" contentEditable>
+			</textarea>
+		</div>
+		<div class="blockQuote">
+		<p class="title">Records Info</p>
+			<textarea id="recordInfo" contentEditable>		
+			</textarea>
+		</div>
+		<div class="blockQuote">
+			<p class="title">Responses</p>
+			<textarea id="respostas" contentEditable>
+			</textarea>
+		</div>
+		<br>
+		<label id="select" for="funct" >Escolha a Função:</label>
+
+		<select id="funct">
+		<option selected>-None-</option>
+		</select>
+		
+		<button type="button" onclick="adicionarFuncao($('funct'))">Adicionar</button>
+		<button type="button" onclick="removerFuncao($('i'))">Remover</button>
+		<button type="button" onclick="distributeLead()">Aplicar</button>
+
+		<ul id="lista">
+  		
+		</ul>
+
+		<script type="text/javascript">
+			$(document).ready(function(){
+				initializeWidget();
+			})
+		</script>
+	</body>
+</html>
