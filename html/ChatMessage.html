@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+
+<head>
+
+
+  <link rel="stylesheet" type="text/css" href="../css/chatmessage.css" />
+
+  <script type="text/javascript" src="../lib/purify.min.js"></script>
+  <script type="text/javascript" src="../lib/jquery.min.js"></script>
+  <script type="text/javascript" src="../lib/polyfill.min.js"></script>
+  <script type="text/javascript" src="../lib/es6-promise.min.js"></script>
+  <script type="text/javascript" src="../lib/ZohoCrmHelper.js"></script>
+  <script type="text/javascript" src="../lib/ZSDK.js"></script>
+  <script type="text/javascript" src="../lib/handlebars-v4.0.10.js"></script>
+  <script type="text/javascript" src="../js/chatmessage.js"></script>
+
+
+  <meta charset="UTF-8">
+  <title>Chat</title>
+  <script type="text/javascript" >
+  function googleTranslateElementInit() { 
+        new google.translate.TranslateElement({pageLanguage: 'pt-BR', includedLanguages: 'en',
+            layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT, autoDisplay: false, multilanguagePage: true}, 'google_translate_element')
+  }
+    </script>
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+
+<body>
+
+
+
+  <div class="popapulbge dT" id="ErroMsg" style="display: none;">
+
+    <div class="error"><span class="iconboxerror"><span class="erroricon"></span></span><span class="erroText f16 fR"
+        id="spanerror"></span><span class="clo-iconerr" onClick="closeSpanMsg('ErroMsg')">&nbsp;</span></div>
+  </div>
+
+  <div class="popapulbge dT" id="SuccessMsg" style="display: none;">
+    <div class="success"><span class="iconbox"><span class="successicon"></span></span><span
+        class="sucesText f16 fR"></span><span class="clo-icon" onClick="closeSpanMsg('SuccessMsg')">&nbsp;</span></div>
+  </div>
+
+  <div id="newLoad" style="display: none;">Loading<span class="one">.</span><span class="two">.</span><span
+      class="three">.</span></div>
+
+  <div id="cont">
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <table width="100%" border="0" cellspacing="0" height="100%" id="tbchat" style="display: none;">
+      <tr>
+        <td>
+          <div id="chat">
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+
+</html>

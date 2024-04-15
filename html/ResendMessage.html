@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Envia uma mensagem</title>
+
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/sendmessage.css" />
+    <link rel="stylesheet" type="text/css" href="../css/switcher.css" />
+    <link rel="stylesheet" type="text/css" href="../css/switchbutton.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../css/multiple-select.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="../css/select.css" />
+
+    <script type="text/javascript" src="../lib/purify.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.js"></script>
+    <script type="text/javascript" src="../lib/polyfill.min.js"></script>
+    <script type="text/javascript" src="../lib/multiple-select.min.js"></script>
+    <script
+      type="text/javascript"
+      src="../lib/jquery.twbsPagination.js"
+    ></script>
+    <!-- <script type="text/javascript" src="../lib/ZohoEmbededAppSDK.min.js"></script> -->
+    <script type="text/javascript" src="../lib/ZohoCrmHelper.js"></script>
+    <script type="text/javascript" src="../lib/ZSDK.js"></script>
+    <script type="text/javascript" src="../lib/handlebars-v4.0.10.js"></script>
+    <script type="text/javascript" src="../js/resendMessage.js"></script>
+    <script type="text/javascript" src="../lib/lc_switch.js"></script>
+    <script
+      type="text/javascript"
+      src="../lib/jquery.caretposition.js"
+    ></script>
+    <script type="text/javascript" src="../lib/jquery.switcher.js"></script>
+  </head>
+
+  <body>
+    <div class="popapulbge dT" id="ErroMsgBig" style="display: none;">
+      <div class="error" style="height:60px !important;">
+        <span class="iconboxerror"><span class="erroricon"></span></span
+        ><span class="erroText f16 fR" id="spanerror"></span
+        ><span class="clo-iconerr" onClick="closeSpanMsg('ErroMsgBig')"
+          >&nbsp;</span
+        >
+      </div>
+    </div>
+
+    <div class="popapulbge dT" id="ErroMsg" style="display: none;">
+      <div class="error">
+        <span class="iconboxerror"><span class="erroricon"></span></span
+        ><span class="erroText f16 fR" id="spanerror"></span
+        ><span class="clo-iconerr" onClick="closeSpanMsg('ErroMsg')"
+          >&nbsp;</span
+        >
+      </div>
+    </div>
+
+    <div class="popapulbge dT" id="SuccessMsg" style="display: none">
+      <div class="success">
+        <span class="iconbox"><span class="successicon"></span></span
+        ><span class="sucesText f16 fR"></span
+        ><span class="clo-icon" onClick="closeSpanMsg('SuccessMsg')"
+          >&nbsp;</span
+        >
+      </div>
+    </div>
+    <div id="newLoad" style="display: none;" key="translate">{{msg-notify-send}}<span class="one">.</span><span class="two">.</span><span class="three">.</span></div>
+    <div id="cont">
+      <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <main id="app" class="container" style="display: none; overflow: auto">
+      <div class="row pb-5">
+        <div class="col-12">
+          <div class="alert"></div>
+          <div>
+            <label key="translate">{{send-message-whatsapp-update-phone}}</label>
+            <div class="onoffswitch">
+              <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitchtemplate" tabindex="0">
+              <label class="onoffswitch-label" for="myonoffswitchtemplate">
+              <span class="onoffswitch-inner"></span>
+              <span class="onoffswitch-switch" style="width:19px;"></span>
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="d-block" key="translate"
+              >{{send-message-fld-phone}}</label
+            >
+            <div class="filed clearfix CB mB10" style="padding-bottom: 0px">
+              <div id="leadDefault" class="field flt" style="width: 70%"></div>
+              <div
+                style="
+                  float: right;
+                  display: none;
+                  font-size: 10px;
+                  color: rgb(255, 0, 0);
+                  padding-left: 390px;
+                  width: 70%;
+                "
+                id="leadEmpty"
+                key="translate"
+              >
+                {{send-message-req-message}}
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message" key="translate"
+              >{{send-message-fld-message}}</label
+            >
+            <textarea
+              id="textMsg"
+              class="form-control textmain"
+              maxlength="5000"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <br>
+          <div class="d-flex align-items-center justify-content-end">
+            <button onclick="sendMsg()" class="btn btn-primary" key="translate">
+              {{btn-send}}
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script></script>
+  </body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Crie um template</title>
+
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/switcher.css" />
+    <link rel="stylesheet" type="text/css" href="../css/templates.css" />
+    <link rel="stylesheet" type="text/css" href="../css/multiple-select.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
+    <link rel="stylesheet" type="text/css" href="../css/select.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+     <link rel="stylesheet" href="../css/html_editor.css" />
+    <link rel="stylesheet" href="../css/bootstrap/css/bootstrap.min.css">
+
+    <script type="text/javascript" src="../lib/purify.min.js"></script>
+    
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    <!--<script type="text/javascript" src="../lib/jquery.min.js"></script>-->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <script type="text/javascript" src="../lib/polyfill.min.js"></script>
+    <script type="text/javascript" src="../lib/multiple-select.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.twbsPagination.js"></script>
+    <!--<script type="text/javascript" src="../lib/es6-promise.min.js"></script>-->
+    <script type="text/javascript" src="../lib/ZohoCrmHelper.js"></script>
+    <script type="text/javascript" src="../lib/ZSDK.js"></script>
+    <script type="text/javascript" src="../lib/handlebars-v4.0.10.js"></script>
+    <script type="text/javascript" src="../js/template.js"></script>
+    <script type="text/javascript" src="../lib/lc_switch.js"></script>
+    <script type="text/javascript" src="../lib/jquery.caretposition.js"></script>
+    <script type="text/javascript" src="../lib/jquery.switcher.js"></script>
+     <script type="text/javascript" src="../lib/emojibutton.js"></script>
+    <script type="text/javascript" src="../lib/emojibuttontemplate.js"></script>
+    
+    <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+    <div class="popapulbge dT" id="ErroMsg" style="display: none">
+      <div class="error">
+        <span class="iconboxerror"><span class="erroricon"></span></span
+        ><span class="erroText f16" id="spanerror"></span
+        ><span class="clo-iconerr" onClick="closeSpanMsg('ErroMsg')"
+          >&nbsp;</span
+        >
+      </div>
+    </div>
+  <div class="popapulbge dT" id="SuccessMsg" style="display: none">
+    <div class="success">
+      <span class="iconbox"><span class="successicon"></span></span>
+      <span class="sucesText f16"></span>
+      <span class="clo-icon" onClick="closeSpanMsg('SuccessMsg')">&nbsp;
+      </span>
+    </div>
+  </div>
+  <div id="cont">
+    <div class="lds-ring">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+  <div id="mainDiv" style="display:none;">
+    <div class="headiv">
+      <div style="float: left; display:inline;">
+        <button class="button button1" style="width: 70px" onclick="openForm()" key="translate">{{btn-create}}</button>
+      </div>
+      <div style="float: right;display: inline">
+        <input class="form-control" type="text" id="searchField" name="fname" placeholder="Pesquisa/Search" style="width:300px;height: 30px; padding-left:10px; display: inline;">
+        <button class="button button1" style="width: 100px;" onClick="searchTemplate();" key="translate">{{btn-search}}</button>
+      </div>
+    </div>
+    
+        <div class="tablediv">
+          <table id="mainTable" class="table table-hover" style="margin-top: 20px">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th style="width: 600px;" key="translate">{{th-template1}}</th>
+                <th style="width: 100px;" key="translate">{{th-template2}}</th>
+                <th></th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="ealine">
+              
+            </tbody>
+          </table>
+          
+        </div>
+      <div style="float: right; margin-bottom:35px">
+        <button class="button button1" id="closeShowMore" onclick="showMore()" style="display:block; width:120px;" key="translate">{{btn-more}}</button>
+        </div>
+      </div>
+      
+      <div class="criar-popup" id="myForm" style="display:none; padding: 0px 20px">
+        <h3 class="filed" style="padding-bottom:20px;" key="translate">{{send-message-sel-template}}</h3>
+          <table class="table">
+            <tr>
+              <td>
+                <label class="d-block" key="translate">{{send-message-fld-template1}}</label>
+              </td>
+              <td>
+                <div id="leadDefault" class="field flt" style="width: 70%">
+                  <select
+                    id="modulesSelect"
+                    class="newSelect"
+                    style="width: 190px;"
+                    onchange="moduleLoading()"
+                    required="true">
+                      <option value="Vazio" key="translate">{{send-message-fld-template1a}}</option>
+                      <option value="Leads" key="translate">{{send-message-fld-template1b}}</option>
+                      <option value="Contacts" key="translate">{{send-message-fld-template1c}}</option>
+                      <option value="Accounts" key="translate">{{send-message-fld-template1d}}</option>
+                      <option value="Deals" key="translate">{{send-message-fld-template1e}}</option>
+                    </select>
+                    <div
+                  style="
+                    display: none;
+                    font-size: 12px;
+                    color: rgb(255, 0, 0);
+                    width: 70%;
+                  "
+                  id="selectEmpty" key="translate">
+                  {{send-message-req-sel-message}}
+                </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label key="translate">{{send-message-fld-template2}}</label>
+              </td>
+              <td>
+                <input
+                  type="text"
+                  value=""
+                  id="myInput"
+                  class="form-control"
+                  style="width: 400px; border-radius: 5px; padding-left: 5px; height: 28px;"
+                />
+                <div
+                  style="
+                    float: right;
+                    display: none;
+                    font-size: 12px;
+                    color: rgb(255, 0, 0);
+                    padding-left: 10px;
+                    width: 70%;
+                  "
+                  id="fieldEmpty"key="translate">
+                  {{send-message-req-message}}
+                </div>
+              </td>
+            </tr>
+            <tr id="linhaTextArea" style="display:none;">
+              <td>
+                <label for="message" key="translate">{{send-message-fld-message}}</label>
+              </td>
+              <td id="textArea">
+                <textarea
+                  id="textMsg"
+                  class="form-control"
+                  maxlength="5000"
+                  cols="30"
+                  rows="10"
+                  style="resize: none; height: 280px;padding: 2px 5px;"
+                ></textarea>
+                <div class="html-tools">
+                  <button class="btn-negrito" onclick="typeBold()"></button>
+                  <button class="btn-italico" onclick="typeItalico()"></button>
+                  <button class="btn-citacao" onclick="typeCitacao()"></button>
+                  <button class="btn-strike" onclick="typeStrike()"></button>
+                  <!--<button id="btnEmoji" class="btn-emoji"></button>-->
+                  <!--<button class="btn-attachment" onclick="makeAttachment()"></button>-->
+                </div>
+                <div id="templateMergeValuesDIV" class="alignleft curv3px pA  pB5 zI10" style="display: none;" >
+                        <i class="setDDPopupAbG" style="left: 6px;"><i class="setDDPopupA"></i></i>
+                        <ul class="pL0 pR0 pB0 m0" id="searchMergeValues" data-zcqa="searchMergeValues" style="display: none; max-height: 235px;"></ul>
+                        <div class="" id="listMergeValues">
+                            <div id="moduleOptionsList" class="mT10 mL10 mR10 mB5 curv3px newEditorModuleList">
+                            </div>
+                            <div class="oA" style="max-height:200px;">
+                            </div>
+                        </div>
+                    </div>
+                <div>
+                  <p key="translate"><strong>{{send-message-text-obs}}</strong> {{send-message-text-tam}}</p>
+                <div
+                  style="
+                    float: right;
+                    display: none;
+                    font-size: 14px;
+                    color: rgb(255, 0, 0);
+                    padding-left: 200px;
+                    width: 70%;
+                    margin-bottom: 10px;
+                    margin-top: -20px;
+                  "
+                  id="textEmpty"key="translate">
+                  {{send-message-req-message}}
+                </div>
+              </td>
+            </tr>
+          </table>
+            <div style="float: right;">
+              <button class="button button1 tablebutton" id="closeTemp" onclick="fechaTemplate()" style="display:inline; width:90px" key="translate">{{btn-cancel}}</button>
+              <button class="button button1 tablebutton" id="createTemp" onclick="criarTemplate()" style="display:none; width:70px" key="translate">{{btn-create}}</button>
+            </div>
+        </div>
+
+      <div id="editPopup" class="edit-popup" style="display:none; padding: 0px 20px">
+       
+          <h3 class="filed" style="padding-bottom:20px;" key="translate">{{txt-edit-template}}</h3>
+        
+        <table class="table">
+        <tr>
+        <td key="translate">
+        {{send-message-fld-template1}}
+        </td>
+        <td>
+        <select id="tempSelect" class="newSelect" style="width: 150px;" onchange="moduleLoading2()" required="true">
+          <option value="Leads" key="translate">{{send-message-fld-template1b}}</option>
+          <option value="Contacts" key="translate">{{send-message-fld-template1c}}</option>
+          <option value="Accounts" key="translate">{{send-message-fld-template1d}}</option>
+          <option value="Deals" key="translate">{{send-message-fld-template1e}}</option>
+        </select>
+        </td>
+        </tr>
+        <tr>
+        <td key="translate"> 
+        {{send-message-fld-template2}}
+        </td>
+        <td style="margin-top: 10px">
+        <input type="text" id="tempName" class="form-control" style="width: 300px; border-radius: 5px; padding-left: 5px;">
+        </td>
+        </tr>
+        <tr>
+        <td key="translate">
+        {{send-message-fld-message}}
+        </td>
+        <td>
+        <textarea class="form-control" id="tempMessage" rows="3" style="resize: none; height: 280px; padding: 5px 5px"></textarea>
+        <div class="html-tools" style="width:40% !important">
+                  <button class="btn-negrito" onclick="typeBoldTemp()"></button>
+                  <button class="btn-italico" onclick="typeItalicoTemp()"></button>
+                  <button class="btn-citacao" onclick="typeCitacaoTemp()"></button>
+                  <button class="btn-strike" onclick="typeStrikeTemp()"></button>
+                  <!--<button id="btnEmojiTemp" class="btn-emoji"></button>-->
+                  <!--<button class="btn-attachment" onclick="makeAttachment()"></button>-->
+                </div>
+<div id="templateMergeValuesDIV2" class="alignleft curv3px pA  pB5 zI10" style="display: none;" >
+                        <i class="setDDPopupAbG" style="left: 6px;"><i class="setDDPopupA"></i></i>
+                        <ul class="pL0 pR0 pB0 m0" id="searchMergeValues2" data-zcqa="searchMergeValues" style="display: none; max-height: 235px;"></ul>
+                        <div class="" id="listMergeValues2">
+                            <div id="moduleOptionsList2" class="mT10 mL10 mR10 mB5 curv3px newEditorModuleList">
+                            </div>
+                            <div id="editOA" class="oA" style="max-height:200px;">
+                            </div>
+                        </div>
+                    </div>
+        </td>
+        <tr>
+        <td>
+        </td>
+        <td>
+        </td>
+        </tr>
+        </table>
+        <button class="button button1" id="editTempPop" onclick="editTemplate()" style="display:block; width:70px; float:right;" key="translate">{{btn-save}}</button>
+        <button class="button button1" id="closeTempPop" onclick="closeTempPopup()" style="display:block; width:90px;float:right;" key="translate">{{btn-cancel}}</button>
+      </div>
+
+      <div id="exibirPopup" class="exibe-popup" style="display:none; padding: 0px 20px">
+       
+          <h3 class="filed" style="padding-bottom:20px;" key="translate">{{txt-edit-template}}</h3>
+        
+        <table class="table">
+        <tr>
+        <td key="translate">
+          {{send-message-fld-template1}}
+        </td>
+        <td>
+        <input type="text" id="exibeSelect" class="form-control" style="width: 300px; border-radius: 5px; padding-left: 5px;" readonly>
+        </td>
+        </tr>
+        <tr>
+        <td key="translate">
+          {{send-message-fld-template2}}
+        </td>
+        <td style="margin-top: 10px">
+        <input type="text" id="exibeName" class="form-control" style="width: 300px; border-radius: 5px; padding-left: 5px;" readonly>
+        </td>
+        </tr>
+        <tr>
+        <td key="translate">
+          {{send-message-fld-message}}
+        </td>
+        <td>
+        <textarea class="form-control" id="exibeMessage" rows="3" style="resize: none; height: 280px; padding: 5px 5px" readonly></textarea>
+        
+        </td>
+        <tr>
+        <td>
+        </td>
+        <td>
+        </td>
+        </tr>
+        </table>
+        
+        <button class="button button1" id="closeExibePopup" onclick="fecharExibePopup()" style="display:block; width:90px;float:right;" key="translate">{{btn-close}}</button>
+      </div>
+        
+      </div>
+      
+     <script type="text/javascript">
+    $(document).ready(function(){
+        initializeWidget();
+        
+    
+            $(function () {
+              $("select").multipleSelect({
+                filter: true,
+              });
+            });
+            
+    })
+</script>
+  </body>
+ 
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>My Iframe</title>
+</head>
+
+<body>
+
+	<button>Botão</button>
+
+	<script type="text/javascript">
+		const eventMethod = window.addEventListener ? 'addEventListener' : 'attachEvent';
+		const eventer = window[eventMethod];
+		const messageEvent = eventMethod === 'attachEvent' ? 'onmessage' : 'message';
+
+
+		// Listen to message from child window
+		eventer(messageEvent, e => {
+			const key = e.message ? 'message' : 'data';
+			const data = e[key];
+
+			// if (e.origin !== 'http://the-trusted-iframe-origin.com') return;
+			if (data.event === "onChatShow")
+				onLoadHandler(data.chat);
+			//console.log(e);
+		});
+
+
+		function onLoadHandler(id) {
+
+			var actualChat = $("#" + id);
+
+			if (actualChat.length > 0) {
+				actualChat[0].click();
+				$("#btManipulaChat").hide();
+				$(".ladoA").hide();
+				$(".ladoB").css("width", "99%");
+				parent.postMessage('onChatShow', *)
+			}
+
+		}
+	</script>
+
+
+</body>
+
+</html>

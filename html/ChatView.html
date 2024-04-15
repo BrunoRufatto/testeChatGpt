@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" type="text/css" href="../css/chat_view.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/multiple-select.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.min.css" rel="stylesheet">
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="../lib/multiple-select.min.js"></script>
+  <script type="text/javascript" src="../lib/ZohoCrmHelper.js"></script>
+  <script type="text/javascript" src="../lib/ZSDK.js"></script>
+  <script type="text/javascript" src="../js/ChatView.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"></script>
+</head>
+
+<body>
+  <div id="load-spinner" class="spinner-container">
+    <div class="spinner"></div>
+  </div>
+
+
+  <div class="page-content page-container d-none" id="page-content"
+    style="width:100% !important; max-width: 100% !important">
+    <div class="padding" style="width:100% !important; max-width: 100% !important">
+      <div class="row container d-flex justify-content-center"
+        style="width:100% !important; max-width: 100% !important">
+        <div class="col-md-6" style="width:100% !important; max-width: 100% !important; flex: none !important;">
+          <div class="card card-bordered" style="width:100% !important; max-width: 100% !important">
+            <div class="card-header" style="width:100% !important; max-width: 100% !important">
+              <h4 class="card-title" style="margin-bottom: 0px !important;"><strong>Chat</strong></h4>
+            </div>
+
+            <div class="ps-container ps-theme-default ps-active-y" id="chat-content"
+              style="overflow-y: scroll !important; height:400px !important;">
+              <div id="message-body"></div>
+              <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
+                <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
+              </div>
+
+              <div class="ps-scrollbar-y-rail" style="top: 0px; height: 0px; right: 2px;">
+                <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 2px;"></div>
+              </div>
+            </div>
+
+            <div class="publisher bt-1 border-light">
+              <img class="avatar avatar-xs"
+                src="https://img.icons8.com/external-flaticons-flat-flat-icons/344/external-customer-digital-nomading-relocation-flaticons-flat-flat-icons-2.png"
+                alt="...">
+              <input class="publisher-input" type="text" placeholder="Write something">
+
+              <select id="select_device" style="width:230px;">
+                <option>-- none --</option>
+              </select>
+
+              <a class="publisher-btn text-info" onclick="sendMessage()" data-abc="true">
+                <i class="fa fa-paper-plane"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-12 d-none justify-content-center" id="not-content">
+    <p class="mt-3"><strong><span id="msg-name"></span></strong></p>
+  </div>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      //initializeWidget();
+    })
+  </script>
+</body>
+
+</html>

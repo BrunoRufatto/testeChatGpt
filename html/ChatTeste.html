@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="../css/chat.css" />
+  
+  <script type="text/javascript" src="../lib/purify.min.js"></script>
+  <script type="text/javascript" src="../lib/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="../lib/polyfill.min.js"></script>
+  <script type="text/javascript" src="../lib/ZohoCrmHelper.js"></script>
+  <script type="text/javascript" src="../lib/ZSDK.js"></script>
+  <script type="text/javascript" src="../lib/handlebars-v4.0.10.js"></script>
+  <script type="text/javascript" src="../lib/jquery.caretposition.js"></script>
+  <script type="text/javascript" src="../js/teste.js"></script>
+
+  <meta charset="UTF-8">
+  <title>Chat</title>
+
+  <style>
+    body {
+      display: flex; /* Define o layout flexível para o corpo do documento */
+      height: 900px; /* Altura fixa para o corpo, ajuste conforme necessário */
+    }
+    iframe {
+      flex: 0 0 80%; /* O iframe vai ocupar 80% da largura da página */
+      height: 900px; /* O iframe vai ocupar toda a altura disponível */
+      border: none; /* Remover a borda do iframe se houver */
+    }
+    .menu-lateral {
+      flex: 0 0 20%; /* O menu lateral vai ocupar 20% da largura da página */
+      background-color: white; /* Cor de fundo do menu lateral */
+      height: 900px; /* O menu vai ocupar toda a altura disponível */
+      /* Adicione mais estilos aqui conforme necessário */
+    }
+  </style>
+</head>
+<body>
+
+  <iframe scrolling="no" allow="geolocation; microphone *; camera *; midi; encrypted-media" src="https://app.zapphub.com/61d47c5ba8b2a39db31b5a83/c/5515997036442" height="900"></iframe>
+
+  <div class="menu-lateral">
+    <!-- Conteúdo do menu lateral aqui -->
+  </div>
+
+</body>
+<script type="text/javascript">
+  $(document).ready(function(){
+      initializeWidget();
+  })
+  setInterval(() => {
+        console.log($(document).find("data-chat-id").prevObject[0].baseURI);
+      }, 5000);
+</script>
+</html>

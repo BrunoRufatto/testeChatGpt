@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../css/viewfile.css" />
+    <link rel="stylesheet" href="../css/magnific-popup.css" />
+
+    
+    <script type="text/javascript" src="../lib/purify.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../lib/jquery.magnific-popup.js"></script>
+    <script type="text/javascript" src="../lib/polyfill.min.js"></script>
+    <script type="text/javascript" src="../lib/ZohoCrmHelper.js"></script>
+    <script type="text/javascript" src="../lib/ZSDK.js"></script>
+    <script type="text/javascript" src="../lib/handlebars-v4.0.10.js"></script>
+    <script
+      type="text/javascript"
+      src="../lib/jquery.caretposition.js"
+    ></script>
+    <script type="text/javascript" src="../js/viewfile.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <meta charset="UTF-8" />
+    <title>Chat</title>
+  </head>
+
+  <body>
+    <div class="popapulbge dT" id="ErroMsg" style="display: none">
+      <div class="error">
+        <span class="iconboxerror"><span class="erroricon"></span></span
+        ><span class="erroText f16 fR" id="spanerror"></span
+        ><span class="clo-iconerr" onClick="closeSpanMsg('ErroMsg')"
+          >&nbsp;</span
+        >
+      </div>
+    </div>
+
+    <div class="popapulbge dT" id="SuccessMsg" style="display: none">
+      <div class="success">
+        <span class="iconbox"><span class="successicon"></span></span
+        ><span class="sucesText f16 fR"></span
+        ><span class="clo-icon" onClick="closeSpanMsg('SuccessMsg')"
+          >&nbsp;</span
+        >
+      </div>
+    </div>
+
+    <div id="newLoad" style="display: none; height:16px">
+      Loading<span class="one">.</span><span class="two">.</span
+      ><span class="three">.</span>
+    </div>
+
+    <div id="div_img" style="text-align: center; display: none;">
+      
+    </div>
+  </body>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      
+      initializeWidget();
+  
+    })
+  
+  </script>
+</html>
